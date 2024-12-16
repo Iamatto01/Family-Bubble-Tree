@@ -1,0 +1,175 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E8F1F5; /* Light Mode Background */
+    color: #333;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+body.night {
+    background: #1C2541; /* Dark Mode Background */
+    color: #F5F5F5;
+}
+
+/* Main Content Styling */
+main {
+    text-align: center;
+    padding: 2rem;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Day/Night Toggle Button */
+.dayNight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.dayNight input {
+    display: none;
+}
+
+.dayNight label {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    background: #FFB703; /* Sun Color */
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+body.night .dayNight label {
+    background: #4361EE; /* Moon Color */
+    box-shadow: 0 0 12px rgba(67, 97, 238, 0.7);
+}
+
+.dayNight label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 -20px 0 #FFFFFF, 0 20px 0 #FFFFFF, 20px 0 0 #FFFFFF, -20px 0 0 #FFFFFF;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.4s ease;
+}
+
+body.night .dayNight label::before {
+    box-shadow: none;
+    background: transparent;
+    transform: translate(-50%, -50%) scale(0.6);
+}
+
+/* Smooth Transitions */
+body, .dayNight label, .dayNight label::before {
+    transition: all 0.4s ease;
+}
+
+
+#family-tree-container {
+    display: flex;
+    flex-direction: column; /* Arranges levels vertically */
+    align-items: center; /* Centers each row horizontally */
+    gap: 2em; /* Adds spacing between levels */
+    padding: 1em;
+    background-color: #a5a4a4;
+    width: 100%; /* Takes the full width of the parent container */
+    max-width: none; /* Increase the maximum width to make it wider */
+    margin: 0 auto; /* Center the container horizontally */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for aesthetics */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+
+/* Individual family row (each level of the tree) */
+.family-level {
+    display: flex;
+    justify-content: center; /* Align bubbles horizontally */
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+/* Bubble styling */
+.bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: #d8d4d4;
+    border: 2px solid #333;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Bubble image */
+.bubble img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.bubble span {
+    margin-top: 3px;
+}
+
+
+/*Gallery*/
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+}
+
+.gallery-event {
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+
+.gallery-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+.gallery-scroll img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}

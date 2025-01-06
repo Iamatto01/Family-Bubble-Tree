@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <label class="DayNight">
+        <input type="checkbox">
+        <div></div> <!-- Fixed closing div -->
+    </label>
+  </nav>
+
+  <!-- Add People Form -->
+  <div id="add-people-form">
+    <h2>Add New Person</h2>
+    <form id="person-form">
+        <label>
+            Name:
+            <input type="text" id="name" required>
+        </label>
+        <label>
+            Relation Label:
+            <input type="text" id="relation" required>
+        </label>
+        <label>
+            Parent's Name (Optional):
+            <input type="text" id="parent">
+        </label>
+        <label>
+            Upload Image:
+            <input type="file" id="image" accept="image/*" required>
+        </label>
+        <button type="submit">Add Person</button>
+        <a href="index.html" class="button">Back</a>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

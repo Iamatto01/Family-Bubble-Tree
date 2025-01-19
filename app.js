@@ -79,8 +79,8 @@ const familyTreeData = {
                     image: "images/Emak.jpg"
                 },
                 {
-                    name: "Maimunah", // Adds Mom as a sibling in Grandparent tree
-                    birthday: "Feb 14, 1968",
+                    name: "Zainal Abidin", // Adds Mom as a sibling in Grandparent tree
+                    birthday: "February 22, 1968",
                     image: "images/Emak.jpg"
                 },
                 {
@@ -206,7 +206,7 @@ const familyTreeData = {
     children: [
         {
             name: "Mohd Muizzuddin",
-            birthday: "Jan 1, 1992",
+            birthday: "December 3, 1992",
             image: "images/Along.png",
             partner : { name: "Farhana",
                 birthday: "Dec 15, 1939",
@@ -215,18 +215,18 @@ const familyTreeData = {
             children: [
                 {
                     name: "Eliya Hana",
-                    birthday: "Mar 10, 2020",
+                    birthday: "November 15, 2018",
                     image: "images/Eliya.png",
                     
                 },
                 {
                     name: "Syifa Hana",
-                    birthday: "Mar 10, 2020",
+                    birthday: "June 14, 2020",
                     image: "images/Syifa.png",
                 },
                 {
                     name: "Faeq Mateen",
-                    birthday: "Mar 10, 2020",
+                    birthday: "January 27, 2023",
                     image: "images/Faeq.png",
                 },
                 
@@ -234,7 +234,7 @@ const familyTreeData = {
         },
         {
             name: "Nurul Fatihah",
-            birthday: "Dec 25, 2000",
+            birthday: "February 22, 1994",
             image: "images/Kngah.png",
             partner : { name: "Faizal",
                 birthday: "Dec 15, 1939",
@@ -243,7 +243,7 @@ const familyTreeData = {
             children: [
                 {
                     name: "Nur Aliya Amani",
-                    birthday: "Mar 10, 2020",
+                    birthday: "June 1 , 2020",
                     image: "images/Amani.png",
                     
                 },
@@ -254,29 +254,29 @@ const familyTreeData = {
                 },
                 {
                     name: "Ahmad Aidan Ahza",
-                    birthday: "Mar 10, 2020",
+                    birthday: "April 7, 2023",
                     image: "images/Ahza.png",
                 },
                 
             ]
         }, 
         {  name: "Mohd Nasirruddin",
-            birthday: "Dec 25, 2000",
+            birthday: "November 3, 1995",
             image: "images/Alang.png",
             partner : { name: "Anis",
-                birthday: "Dec 15, 1939",
+                birthday: "November 1 1995, ",
                 image: "images/Kanis.png"},
           
             children: [
                 {
                     name: "Aaira Nafisa",
-                    birthday: "Mar 10, 2020",
+                    birthday: "June 19, 2020",
                     image: "images/Aaira.png",
                     
                 },
                 {
                     name: "Aariyan",
-                    birthday: "Mar 10, 2020",
+                    birthday: "October 10, 2023",
                     image: "images/Aariyan.png",
                 },
                
@@ -285,16 +285,16 @@ const familyTreeData = {
         },
         {
             name: "Mohd Zahiruddin",
-            birthday: "Dec 25, 2000",
+            birthday: "November 20, 1997",
             image: "images/Uteh.png",
-            partner : { name: "Aina",
-                birthday: "Dec 15, 1939",
+            partner : { name: "Nur Aina Fatihah",
+                birthday: "April 9, 1999",
                 image: "images/Kaina.png"},
           
             children: [
                 {
-                    name: "Eliya Hana",
-                    birthday: "Mar 10, 2020",
+                    name: "Nur Nadra Wardina",
+                    birthday: "November 1, 2024",
                     image: "images/Nadra.png",
                     
                 },
@@ -303,17 +303,17 @@ const familyTreeData = {
         }, 
         {
             name: "Nurul Faizah",
-            birthday: "Dec 25, 2000",
+            birthday: "November 3, 1999",
             image: "images/Kuda.png"
         },
         {
             name: "Muhammad Saifudin",
-            birthday: "Dec 25, 2000",
+            birthday: "March 6, 2004",
             image: "images/Adin.png"
         },
         {
             name: "Nurul Farisha",
-            birthday: "Dec 25, 2000",
+            birthday: "February 17, 2006",
             image: "images/Asya.png"
         }
     ]
